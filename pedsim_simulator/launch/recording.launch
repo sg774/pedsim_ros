@@ -1,0 +1,29 @@
+<launch>
+<node
+pkg="rosbag"
+name="record_trajectory"
+type="record"
+args="-o /home/sukrit/workspace/src/rosbag/predicted_trajectory.bag /predicted_trajectory"
+/>
+
+<node
+pkg="rosbag"
+name="record_robot"
+type="record"
+args="-o /home/sukrit/workspace/src/rosbag/robot_state.bag /robot_state"
+/>
+
+<node
+pkg="rosbag"
+name="record_control"
+type="record"
+args="-o /home/sukrit/workspace/src/rosbag/control_velocity.bag /jackal_velocity_controller/cmd_vel"
+/>
+
+<node
+pkg="rosbag"
+name="record_pedestrians"
+type="record"
+args="-o /home/sukrit/workspace/src/rosbag/person_tracking.bag /pedsim_visualizer/tracked_persons"
+/>
+</launch>
