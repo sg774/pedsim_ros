@@ -39,6 +39,8 @@ Panels:
     Name: Time
     SyncMode: 0
     SyncSource: LaserScan
+Toolbars:
+  toolButtonStyle: 2
 Visualization Manager:
   Class: ""
   Displays:
@@ -68,13 +70,13 @@ Visualization Manager:
       Reference Frame: map
       Value: true
     - Class: rviz/Marker
-      Enabled: false
+      Enabled: true
       Marker Topic: /pedsim_visualizer/walls
       Name: Marker
       Namespaces:
-        {}
+        "": true
       Queue Size: 1
-      Value: false
+      Value: true
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: /pedsim/queues
@@ -295,7 +297,7 @@ Visualization Manager:
       Marker Topic: /visualize_ellipses_array
       Name: MarkerArray
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -411,7 +413,7 @@ Visualization Manager:
       Marker Topic: /global_plan
       Name: MarkerArray
       Namespaces:
-        {}
+        trajectory: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -442,7 +444,7 @@ Visualization Manager:
       Marker Topic: /robot_collision_space
       Name: MarkerArray
       Namespaces:
-        {}
+        trajectory: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -555,6 +557,26 @@ Visualization Manager:
       Radius: 0.100000001
       Reference Frame: ped_link_2
       Value: true
+    - Alpha: 0.699999988
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /my_map
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+    - Alpha: 0.699999988
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /local_map/local_map
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 109; 109; 109
@@ -579,7 +601,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -0.0200018771
+      Angle: -0.0100018624
       Class: rviz/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
@@ -589,7 +611,7 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Scale: 69.7975693
+      Scale: 21.4578285
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz)
       X: 2.69752598
@@ -611,5 +633,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1248
-  X: 3232
+  X: 672
   Y: 24

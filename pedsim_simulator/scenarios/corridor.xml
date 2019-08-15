@@ -3,7 +3,7 @@
 <scenario>
     <!--Exterior rectangle-->
     <!-- -->
-    <obstacle x1="0" y1="-3" x2="20" y2="-3"/>
+    <obstacle x1="0" y1="-4" x2="20" y2="-4"/>
     <obstacle x1="0" y1="3" x2="20" y2="3"/>
 
     <!--Interior rectangle-->
