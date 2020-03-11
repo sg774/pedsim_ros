@@ -49,7 +49,7 @@ SimVisualizer::~SimVisualizer() {
 }
 
 void SimVisualizer::run() {
-  ros::Rate r(20.);
+  ros::Rate r(5.);
 
   while (ros::ok()) {
     publishAgentVisuals();

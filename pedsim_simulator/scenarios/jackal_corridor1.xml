@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This scenario file was created by SGDiCoP on 2014-04-16T15:14:48-->
+<scenario>
+    <!--Exterior rectangle-->
+    <!-- -->
+    <obstacle x1="-3" y1="-4" x2="23" y2="-4"/>
+    <obstacle x1="-3" y1="3" x2="23" y2="3"/>
+    
+    <obstacle x1= "6" y1 ="-0.5" x2="8" y2="-0.25"/>
+    <obstacle x1="14" y1="-0.5" x2="15" y2="-0.5"/> 
+    
+    <!--<obstacle x1="-20" y1="-4" x2="3" y2="-4"/>
+    <obstacle x1="-20" y1="3" x2="3" y2="3"/>
+   
+    <obstacle x1= "-14" y1 ="-0.5" x2="-12" y2="-0.5"/>
+    <obstacle x1="-6" y1="-0.5" x2="-5" y2="-0.5"/> -->
+
+
+    <!--Interior rectangle-->
+    <!--obstacle x1="8" y1="3" x2="12" y2="4"/-->
+
+    
+    </scenario>
